@@ -1,0 +1,56 @@
+.page__footer{
+  padding: 20px;
+
+  background-color: @color_blue-black;
+  flex-shrink: 0;
+}
+
+.grid__item{
+  margin: 15px;
+}
+
+.social-links li{
+  display: inline;
+}
+
+
+
+.extra-nav__items{
+  list-style-type: none;
+}
+
+.social-links__items{
+  list-style-type: none;
+}
+
+.extra-nav__link{
+  text-decoration: none;
+
+  color: @color_white;
+}
+
+.social-links__link{
+  text-decoration: none;
+
+  color: @color_white;
+}
+
+@media @phone{
+  .extra-nav li{
+    padding-bottom: 15px;
+  }
+}
+
+@media @tablet, @laptop {
+
+  .grid__item_valigin_middle{
+    display: flex;
+    justify-content: space-between;
+  }
+  .extra-nav__items{
+    display: flex;
+  }
+  .extra-nav li{
+    padding-left: 15px;
+  }
+}

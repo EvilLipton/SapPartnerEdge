@@ -1,0 +1,38 @@
+.page__content {
+  padding-top: 36px;
+  flex-grow: 1;
+  flex-flow: column;
+  display: flex;  
+  width: 100%;
+}
+
+.flex-container__item_sidebar {
+  max-width: 162px;
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+
+  text-align: center;
+
+  background-color: @color_blue-lapiz-lazuli;
+}
+
+.flex-container__item{
+  flex-flow: column;
+  display: flex;
+  width: 100%;
+}
+
+
+@media @phone{
+  .flex-container__item_sidebar {
+    display: none;
+  }
+}
+
+@media @tablet {
+  .flex-container__item{
+      margin: 0 auto;
+  }
+
+}

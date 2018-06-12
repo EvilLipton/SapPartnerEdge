@@ -1,0 +1,100 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 36px;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin-bottom: 20px;
+
+  color: #fafafa;
+  background-color: #000;
+
+  flex-shrink: 0;
+}
+
+.page__header>.grid{
+  flex-wrap: nowrap;
+}
+
+.header_content-wrapper{
+  position: relative;
+  padding: 0 11px;
+  height: 100%;
+  width: 100%;
+}
+
+.sap-logo__link{
+  display: inline-block;
+
+  background-size: 100%;
+
+  text-decoration: none;
+  color: @color_white;
+}
+
+.sap-logo__image{
+
+  height: 18px;
+  width: 140px;
+}
+
+.grid__item_valign_middle{
+  align-items: center;
+  height: 100%;
+}
+
+.sap-logo {
+  line-height: 0;
+}
+
+.sap-logo__wrapper {
+  display: inline-block;
+}
+
+.extra_nav{
+  font-size: 15px;
+}
+
+.header__nav-container {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.mobile-menu__toogle_gears{
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  right: 22.46%;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.menu {
+  margin-right: 0.625em;
+
+  font-size: 15px;
+}
+
+
+
+@media @tablet{
+  .header{
+    padding: 11px;
+  }
+  .menu {
+      display: none;
+  }
+}
+
+@media @laptop{
+  .content-wrapper-header {
+    max-width: 980px;
+  }
+  .menu {
+      display: none;
+  }
+}
